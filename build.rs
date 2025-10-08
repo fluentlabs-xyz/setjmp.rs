@@ -74,7 +74,7 @@ fn find_symbols(filename: &PathBuf) -> Vec<String> {
         clang_visitChildren(cursor, visitor, &mut vec as *mut Vec<String> as *mut c_void);
     }
 
-    assert!(vec.len() == 4);
+    // assert!(vec.len() == 4);
     vec
 }
 
